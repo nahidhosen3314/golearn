@@ -96,7 +96,7 @@ input:focus-visible {
 } 
 **/
 
-.owl-nav {
+.course-card .owl-nav {
 	display: flex;
 	justify-content: space-between;
 	color: red;
@@ -108,24 +108,24 @@ input:focus-visible {
 	transform: translateY(-50px);
 }
 
-.owl-nav button {
+.course-card .owl-nav button {
 	height: 30px;
 	width: 30px;
 	background: #0000 !important;
 	color: #fff !important;
 	border: 1px solid #4f4f4f !important;
 }
-.owl-nav .disabled {
+.course-card .owl-nav .disabled {
 	background: #363636 !important;
 	cursor: no-drop !important;
 }
 
-.owl-dots {
+.course-card .owl-dots {
 	text-align: center;
     margin-top: 10px;
 }
 
-.owl-dots .owl-dot {
+.course-card .owl-dots .owl-dot {
 	height: 10px;
 	width: 10px;
 	background: white !important;
@@ -134,7 +134,7 @@ input:focus-visible {
     display: inline-block;
 }
 
-.owl-dot.active {
+.course-card .owl-dot.active {
 	background: #F73859 !important;
 }
 
@@ -147,6 +147,36 @@ input:focus-visible {
 	transform: translateY(-50%);
     @apply border-r-0 border-white  last:border-0;
 }
+
+ .students .owl-item img {
+	display: inline-block;
+	width: auto;
+} 
+
+.logo .owl-stage {
+	display: flex;
+	align-items: center !important;
+    text-align: center !important;
+}
+
+.logo .owl-dots {
+	text-align: center;
+    margin-top: 10px;
+}
+
+.logo .owl-dots .owl-dot {
+	height: 10px;
+	width: 10px;
+	background: black !important;
+	border-radius: 50%;
+	margin: 6px;
+    display: inline-block;
+}
+
+.logo .owl-dot.active {
+	background: #F73859 !important;
+}
+/* ----------------------------------- */
 
 
 @screen sm {
@@ -179,11 +209,3 @@ input:focus-visible {
         @apply border-r-2;
     }
 }
-
-
-
-/* element {
-	background: #e5e5e5;
-	padding: 12px 44px 12px 20px;
-	border-radius: 44px;
-} */

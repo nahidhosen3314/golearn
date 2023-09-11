@@ -33,6 +33,7 @@ module.exports = {
         'category' : '#f7385933',
         'star' : '#EB8D00',
         'icon-bg' : '#8C9194',
+        'star' : '#EB8D00',
         'paragraph' : '#333',
       }
     },
