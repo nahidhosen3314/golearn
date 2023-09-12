@@ -7,6 +7,7 @@ $(function(){
         dots: false,
         nav: true,
         autoplay: true,
+        loop: true,
         smartSpeed: 1000,
         responsiveClass:true,
         responsive: {
@@ -30,6 +31,7 @@ $(function(){
         items:1,
         smartSpeed: 1000,
         autoplay: true,
+        loop: true,
         dots: false,
         items: 1,
 
@@ -48,6 +50,7 @@ $(function(){
         autoplay: true,
         smartSpeed: 1000,
         margin: 20,
+        loop: true,
         responsive: {
             0:{
                 items: 1,
