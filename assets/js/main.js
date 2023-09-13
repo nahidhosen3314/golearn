@@ -65,6 +65,12 @@ $(function(){
         }
     })
 
+// ------- video-------------
+
+const lightbox = GLightbox({  });
+
+
+
 
 });
 

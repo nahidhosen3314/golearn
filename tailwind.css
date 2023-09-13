@@ -120,6 +120,11 @@ input:focus-visible {
 	cursor: no-drop !important;
 }
 
+.course-card .owl-nav .disabled:hover{
+    color: transparent !important;
+    border-color: transparent !important;
+}
+
 .course-card .owl-dots {
 	text-align: center;
     margin-top: 10px;
@@ -176,9 +181,29 @@ input:focus-visible {
 .logo .owl-dot.active {
 	background: #F73859 !important;
 }
+
+.course-card .owl-nav button:hover {
+	color:#F73859 !important;
+	border-color:#F73859 !important;
+	transition-property: all !important;
+    transition-duration: 300ms !important;
+}
+
+
 /* ----------------------------------- */
-
-
+.rotate {
+    animation: rotation 9s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+/* ---------------------------------------- */
 @screen sm {
     .award:nth-child(1):before,
     .award:nth-child(3):before {
