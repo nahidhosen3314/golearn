@@ -234,3 +234,21 @@ input:focus-visible {
         @apply border-r-2;
     }
 }
+
+/* ------------- Menu ----------------- */
+
+.menu-bar.active span:nth-child(1) {
+	transform: rotate(45deg) translateX(7px) translateY(5px);
+    transition: all .5s;
+}
+
+.menu-bar.active span:nth-child(2) {
+	opacity: 0;
+    transition: all .5s;
+}
+
+.menu-bar.active span:nth-child(3) {
+	transform: rotate(-45deg) translateX(6px) translateY(-4px);
+    transition: all .5s;
+}
+

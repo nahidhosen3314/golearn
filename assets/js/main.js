@@ -1,6 +1,16 @@
 
 $(function(){
 
+    // Menu
+    $(".h-menu").clone().appendTo(".mobile-menu");
+
+    $(".menu-bar").on("click", function(){
+        $(this).toggleClass("active");
+    });
+
+   
+
+
     // course-card
     $(".course-card").owlCarousel({
         margin: 20,
