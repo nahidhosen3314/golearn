@@ -6,9 +6,37 @@ $(function(){
 
     $(".menu-bar").on("click", function(){
         $(this).toggleClass("active");
+        $(".mobile-menu").toggleClass("active");
+        $("body").toggleClass("menu-active")
     });
 
-   
+    function updateHeight(){
+        var HeaderHeight = $(".entire-header").outerHeight();
+        $(".mobile-menu-wrappar").css({
+            top: HeaderHeight,
+            height: `calc(100vh - ${HeaderHeight}px)`
+        });
+        // $(".mobile-menu-wrappar").css('height', 'calc(100vh - '+ HeaderHeight +')');
+    }
+    updateHeight();
+    $(window).on('resize', function(){
+        updateHeight();
+    });
+
+    
+
+    //count
+    $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 10000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
 
 
     // course-card
