@@ -119,10 +119,13 @@
                 <div class="relative">
                     <img class="rotate w-full" src="assets/image/circle.svg" alt="">
 
-                    <a  href="https://youtu.be/xqyUdNxWazA?si=BWDtjRh6MFugFg1w" class="glightbox flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-16 w-16 rounded-full bg-white text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 16 16"><path fill="currentColor" d="m11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>
-                    </a>
+                    <div class="">
 
+                        <a  href="https://youtu.be/xqyUdNxWazA?si=BWDtjRh6MFugFg1w" class="play-button glightbox flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-16 w-16 rounded-full bg-white text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 16 16"><path fill="currentColor" d="m11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>
+                        </a>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -156,8 +159,8 @@
     </div>
     
 </div>
-<!-- slider -->
 
+<!-- slider -->
 
 <div class="py-12 relative">
     <div class="bg-[#031121]/90 absolute top-0 left-0 h-full w-full -z-10"></div>
@@ -507,7 +510,7 @@
             <div class="-order-1 lg:order-2 relative rounded-3xl overflow-hidden">
                 <img class=" aspect-square w-full object-cover " src="assets/image/Features-img.jpg" alt="">
                 <div class="absolute h-full w-full left-0 top-0 bg-primary mix-blend-multiply"></div>
-                <a href="https://youtu.be/xqyUdNxWazA?si=BWDtjRh6MFugFg1w" class="glightbox flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white text-primary">
+                <a href="https://youtu.be/xqyUdNxWazA?si=BWDtjRh6MFugFg1w" class="play-button glightbox flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white text-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 16 16"><path fill="currentColor" d="m11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>
                 </a>
             </div>
@@ -880,7 +883,6 @@
     </div>
 </div>
 
-
 <div class="pb-14 bg-[#FAFDFF]">
     <div class="text-center max-w-lg m-auto mb-8">
         <small class="text-primary text-lg font-medium mb-2 block">Blog Post</small>
@@ -888,12 +890,13 @@
     </div>
     <div class="container"> 
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
-            <div class="group transition-all shadow-xl hover:shadow-transparent duration-300">
+            <div class="group transition-all shadow-xl hover:shadow-transparent duration-500 relative">
+                <div class="w-0 group-hover:w-full h-1 bg-primary absolute bottom-0 right-0 z-0 duration-500 group-hover:left-0"></div>
                 <a href="" class="w-full relative">
                     <img class="inline-block w-full object-cover aspect-[1/1]" src="assets/image/blog1.png" alt="">
                     <div class="absolute w-full h-full left-0 top-0 transition-all group-hover:bg-black/10 duration-300"></div>
                 </a>
-                <div class="px-5 pt-5 pb-6 bg-white transition-all duration-500 group-hover:border-b-4 group-hover:border-primary">
+                <div class="px-5 pt-5 pb-6 bg-white transition-all duration-500">
                     <div class="flex items-center gap-2">
                         <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.67108 7.84039H5.34646V9.51564H3.67108V7.84039ZM15.3988 3.65226V15.379C15.3988 16.3004 14.6448 17.0543 13.7234 17.0543H1.99569C1.06586 17.0543 0.320312 16.3004 0.320312 15.379L0.328689 3.65226C0.328689 2.73087 1.06586 1.97701 1.99569 1.97701H2.83339V0.301758H4.50877V1.97701H11.2103V0.301758H12.8857V1.97701H13.7234C14.6448 1.97701 15.3988 2.73087 15.3988 3.65226ZM1.99569 5.32751H13.7234V3.65226H1.99569V5.32751ZM13.7234 15.379V7.00276H1.99569V15.379H13.7234ZM10.3726 9.51564H12.048V7.84039H10.3726V9.51564ZM7.02184 9.51564H8.69722V7.84039H7.02184V9.51564Z" fill="#101921"/>
@@ -914,12 +917,13 @@
                     </div>
                 </div>
             </div>
-            <div class="group transition-all shadow-xl hover:shadow-transparent duration-300">
+            <div class="group transition-all shadow-xl hover:shadow-transparent duration-500 relative">
+                <div class="w-0 group-hover:w-full h-1 bg-primary absolute bottom-0 right-0 z-0 duration-500 group-hover:left-0"></div>
                 <a href="" class="w-full relative">
                     <img class="inline-block w-full object-cover aspect-[1/1]" src="assets/image/blog2.png" alt="">
                     <div class="absolute w-full h-full left-0 top-0 transition-all group-hover:bg-black/10 duration-300"></div>
                 </a>
-                <div class="px-5 pt-5 pb-6 bg-white transition-all group-hover:border-b-4 group-hover:border-primary duration-300">
+                <div class="px-5 pt-5 pb-6 bg-white transition-all duration-500">
                     <div class="flex items-center gap-2">
                         <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.67108 7.84039H5.34646V9.51564H3.67108V7.84039ZM15.3988 3.65226V15.379C15.3988 16.3004 14.6448 17.0543 13.7234 17.0543H1.99569C1.06586 17.0543 0.320312 16.3004 0.320312 15.379L0.328689 3.65226C0.328689 2.73087 1.06586 1.97701 1.99569 1.97701H2.83339V0.301758H4.50877V1.97701H11.2103V0.301758H12.8857V1.97701H13.7234C14.6448 1.97701 15.3988 2.73087 15.3988 3.65226ZM1.99569 5.32751H13.7234V3.65226H1.99569V5.32751ZM13.7234 15.379V7.00276H1.99569V15.379H13.7234ZM10.3726 9.51564H12.048V7.84039H10.3726V9.51564ZM7.02184 9.51564H8.69722V7.84039H7.02184V9.51564Z" fill="#101921"/>
@@ -940,12 +944,13 @@
                     </div>
                 </div>
             </div>
-            <div class="group transition-all shadow-xl hover:shadow-transparent duration-300">
+            <div class="group transition-all shadow-xl hover:shadow-transparent duration-500 relative">
+                <div class="w-0 group-hover:w-full h-1 bg-primary absolute bottom-0 right-0 z-0 duration-500 group-hover:left-0"></div>
                 <a href="" class="w-full relative">
                     <img class="inline-block w-full object-cover aspect-[1/1]" src="assets/image/banner.jpg" alt="">
                     <div class="absolute w-full h-full left-0 top-0 transition-all group-hover:bg-black/10 duration-300"></div>
                 </a>
-                <div class="px-5 pt-5 pb-6 bg-white transition-all group-hover:border-b-4 group-hover:border-primary duration-300">
+                <div class="px-5 pt-5 pb-6 bg-white transition-all duration-500">
                     <div class="flex items-center gap-2">
                         <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.67108 7.84039H5.34646V9.51564H3.67108V7.84039ZM15.3988 3.65226V15.379C15.3988 16.3004 14.6448 17.0543 13.7234 17.0543H1.99569C1.06586 17.0543 0.320312 16.3004 0.320312 15.379L0.328689 3.65226C0.328689 2.73087 1.06586 1.97701 1.99569 1.97701H2.83339V0.301758H4.50877V1.97701H11.2103V0.301758H12.8857V1.97701H13.7234C14.6448 1.97701 15.3988 2.73087 15.3988 3.65226ZM1.99569 5.32751H13.7234V3.65226H1.99569V5.32751ZM13.7234 15.379V7.00276H1.99569V15.379H13.7234ZM10.3726 9.51564H12.048V7.84039H10.3726V9.51564ZM7.02184 9.51564H8.69722V7.84039H7.02184V9.51564Z" fill="#101921"/>
@@ -966,12 +971,13 @@
                     </div>
                 </div>
             </div>
-            <div class="group transition-all shadow-xl hover:shadow-transparent duration-300">
+            <div class="group transition-all shadow-xl hover:shadow-transparent duration-500 relative">
+                <div class="w-0 group-hover:w-full h-1 bg-primary absolute bottom-0 right-0 z-0 duration-500 group-hover:left-0"></div>
                 <a href="" class="w-full relative">
                     <img class="inline-block w-full object-cover aspect-[1/1]" src="assets/image/student.jpg" alt="">
                     <div class="absolute w-full h-full left-0 top-0 transition-all group-hover:bg-black/10 duration-300"></div>
                 </a>
-                <div class="px-5 pt-5 pb-6 bg-white transition-all group-hover:border-b-4 group-hover:border-primary duration-300">
+                <div class="px-5 pt-5 pb-6 bg-white transition-all duration-500">
                     <div class="flex items-center gap-2">
                         <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.67108 7.84039H5.34646V9.51564H3.67108V7.84039ZM15.3988 3.65226V15.379C15.3988 16.3004 14.6448 17.0543 13.7234 17.0543H1.99569C1.06586 17.0543 0.320312 16.3004 0.320312 15.379L0.328689 3.65226C0.328689 2.73087 1.06586 1.97701 1.99569 1.97701H2.83339V0.301758H4.50877V1.97701H11.2103V0.301758H12.8857V1.97701H13.7234C14.6448 1.97701 15.3988 2.73087 15.3988 3.65226ZM1.99569 5.32751H13.7234V3.65226H1.99569V5.32751ZM13.7234 15.379V7.00276H1.99569V15.379H13.7234ZM10.3726 9.51564H12.048V7.84039H10.3726V9.51564ZM7.02184 9.51564H8.69722V7.84039H7.02184V9.51564Z" fill="#101921"/>

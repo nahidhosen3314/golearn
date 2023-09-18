@@ -203,6 +203,7 @@ input:focus-visible {
       transform: rotate(359deg);
     }
   }
+  
 /* ---------------------------------------- */
 @screen sm {
     .award:nth-child(1):before,
@@ -314,4 +315,17 @@ body.menu-active {
     animation-delay: 0s;
   }
 
+/* ------------- play-button ----------- */
 
+.play-button {
+	animation: ripple 1s linear infinite;
+}
+
+@keyframes ripple {
+    0%{
+        box-shadow: 0 0 0 0 rgba(255,255,255,.2),0 0 0 40px rgba(255,255,255,.3);
+    }
+    100%{
+        box-shadow: 0 0 0 40px rgba(255,255,255,.3),0 0 0 80px rgba(255,255,255,0);
+    }
+}
